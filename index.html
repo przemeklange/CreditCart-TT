@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card.js</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./app/style/style.bundle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="app">
+        <div class="credit_cart">
+          <img src="./app/images/card.png" id="cart" alt="" />
+          <div class="logo_mastercard">
+            <img src="./app/images/mastercard_logo.png" alt="" />
+          </div>
+          <div class="number_account">
+            <p class="number_account_more">1234 1234 1234 1234</p>
+          </div>
+          <div class="name">
+            <p class="name_more">Jan Kowalski</p>
+          </div>
+          <div class="date">
+            <div class="date_more">02/24</div>
+          </div>
+        </div>
+        <div class="form">
+          <div class="form__logo">
+            <img src="./app/images/happy.png" alt="" />
+            <p>Payment Info</p>
+          </div>
+          <div class="form__info">
+            <form action="">
+              <div class="form__name">
+                <label for="fname">Full Name:</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder="Jan Kowalski"
+                />
+              </div>
+              <div class="form__creditCardNumber">
+                <label for="cart">Credit Card Number</label>
+                <input
+                  type="text"
+                  id="cartinput"
+                  name="cart"
+                  maxlength="19"
+                  placeholder="1234 1234 1234 1234"
+                />
+              </div>
+              <div class="form__date_ccv">
+                <div class="form__date_exp">
+                  <label for="dates">Exp Date</label>
+                  <input
+                    type="text"
+                    id="dates"
+                    name="dates"
+                    placeholder="MM/DD"
+                    maxlength="5"
+                  />
+                </div>
+                <div class="form__date_number_ccv">
+                  <label for="lname">CVV</label>
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    placeholder="CVV"
+                  />
+                </div>
+              </div>
+              <input type="submit" value="Submit" id="submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app/js/main.bundle.js"></script>
+  </body>
+</html>
